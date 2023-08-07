@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.example.biblioteca.entity.Libros;
 
 @Repository("librosRepository")
-public interface RepositoryLibros extends CrudRepository<Libros,String>{
+public interface RepositoryLibros extends CrudRepository<Libros,Long>{
 	
 }

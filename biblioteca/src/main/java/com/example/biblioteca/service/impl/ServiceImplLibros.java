@@ -27,7 +27,7 @@ public class ServiceImplLibros implements ServiceLibros{
 	}
 
 	@Override
-	public Optional<Libros> findByIdLibros(String id) {
+	public Optional<Libros> findByIdLibros(Long id) {
 		return repositoryLibros.findById(id);
 	}
 

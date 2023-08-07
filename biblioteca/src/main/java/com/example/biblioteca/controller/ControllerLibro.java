@@ -30,7 +30,7 @@ public class ControllerLibro {
 	}
 	
 	@GetMapping(path="/get/{id}",produces= {"application/json"})
-	public Optional<Libros> getLibros(@PathVariable String id){
+	public Optional<Libros> getLibros(@PathVariable Long id){
 		return serviceImplLibros.findByIdLibros(id);
 	}
 	
