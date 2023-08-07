@@ -9,4 +9,5 @@ public interface ServiceLibros {
 	public abstract List<Libros> listAllLibros();
 	public abstract Optional<Libros> findByIdLibros(Long id);
 	public abstract Libros updateLibros(Libros libros);
+	public abstract int removeLibros(int id);
 }

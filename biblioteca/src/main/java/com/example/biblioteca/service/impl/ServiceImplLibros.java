@@ -35,5 +35,9 @@ public class ServiceImplLibros implements ServiceLibros{
 	public Libros updateLibros(Libros libros) {
 		return repositoryLibros.save(libros);
 	}
-
+	
+	@Override
+	public int removeLibros(int id) {
+		return repositoryLibros.deleteByIdlibro(id);
+	}
 }

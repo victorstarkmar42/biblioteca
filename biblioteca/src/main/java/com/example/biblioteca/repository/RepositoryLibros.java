@@ -7,5 +7,5 @@ import com.example.biblioteca.entity.Libros;
 
 @Repository("librosRepository")
 public interface RepositoryLibros extends CrudRepository<Libros,Long>{
-	
+	int deleteByIdlibro(int id);
 }
